@@ -1,0 +1,47 @@
+".source.js":
+  "method":
+    prefix: "m"
+    body: """
+    ${1:method} (${2:arguments}) {
+    \t${0}
+    }
+    """
+  "async method":
+    prefix: "ma"
+    body: """
+    async ${1:method} (${2:arguments}) {
+    \t${0}
+    }
+    """
+  "getter":
+    prefix: "get"
+    body: """
+    get ${1:property} () {
+    \t${0}
+    }
+    """
+  "setter":
+    prefix: "set"
+    body: """
+    set ${1:property} (${2:value}) {
+    \t${0}
+    }
+    """
+  "getter + setter":
+    prefix: "gs"
+    body: """
+    get ${1:property} () {
+    \t${0}
+    }
+    set ${1:property} (${2:value}) {
+    \t
+    }
+    """
+  "constructor":
+    prefix: "ctor"
+    body: """
+    constructor (${1:arguments}) {
+    \tsuper(${1:arguments})
+    \t${0}
+    }
+    """

@@ -1,0 +1,16 @@
+".source.js":
+  "chain forEach":
+    prefix: ".fe"
+    body: ".forEach((${1:item}) => {${0}})"
+  "chain map":
+    prefix: ".map"
+    body: ".map((${1:item}) => {${0}})"
+  "chain reduce":
+    prefix: ".reduce"
+    body: ".reduce((${1:previous}, ${2:current}) => {${0}}${4:, initial})"
+  "chain filter":
+    prefix: ".filter"
+    body: ".filter((${1:item}) => {${0}})"
+  "chain find":
+    prefix: ".find"
+    body: ".find((${1:item}) => {${0}})"

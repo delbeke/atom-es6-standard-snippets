@@ -1,0 +1,8 @@
+".source.js":
+  "Promise":
+    prefix: "p",
+    body: """
+    new Promise((resolve, reject) => {
+    \t${0}
+    })
+    """

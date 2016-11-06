@@ -1,0 +1,47 @@
+".source.js":
+  "for":
+    prefix: "f"
+    body: """
+      for (let ${1:i} = 0; ${1:i} < ${2}; ${1:i}++) {
+      \t${0)}
+      }"""
+  "for in iterable":
+    prefix: "fo"
+    body: """
+      for (let ${2:value} of ${1}) {
+        ${0}
+      }"""
+  "for in iterable functional":
+    prefix: "fof"
+    body: """
+      ${1}.forEach((${2:value}) => {
+        ${0}
+      })"""
+  "for in object":
+    prefix: "fi"
+    body: """
+      for (let ${2:key} in ${1}) {
+        ${0}
+      }"""
+  "for in object functional":
+    prefix: "fif"
+    body: """
+      Object.keys(${1}).forEach((${2:key}) => {
+        ${0}
+      })
+      """
+  "for in object":
+    prefix: "fic"
+    body: """
+      for (let ${2:key} in ${1}) {
+        const ${3:item} = ${1}[${2:key}]
+        ${0}
+      }"""
+  "for in object functional":
+    prefix: "fifc"
+    body: """
+      Object.keys(${1}).forEach((${2:key}) => {
+        const ${3:item} = ${1}[${2:key}]
+        ${0}
+      })
+      """

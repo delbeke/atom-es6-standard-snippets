@@ -1,0 +1,23 @@
+{
+  "name": "atom-es6-standard-snippets",
+  "version": "1.0.0",
+  "description": "Snippets for ES6 (standard style) in Atom",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delbeke/atom-es6-standard-snippets.git"
+  },
+  "keywords": [
+    "atom",
+    "snippets"
+  ],
+  "author": "Pieter Delbeke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delbeke/atom-es6-standard-snippets/issues"
+  },
+  "homepage": "https://github.com/delbeke/atom-es6-standard-snippets#readme",
+  "engines": {
+    "atom": ">0.200.0"
+  }
+}
