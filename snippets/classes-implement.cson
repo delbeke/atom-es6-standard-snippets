@@ -41,6 +41,13 @@
     prefix: "ctor"
     body: """
     constructor (${1:arguments}) {
+    \t${0}
+    }
+    """
+  "constructor":
+    prefix: "ctorx"
+    body: """
+    constructor (${1:arguments}) {
     \tsuper(${1:arguments})
     \t${0}
     }
